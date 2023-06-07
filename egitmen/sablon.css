@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap");
+body{
+  background-color: #f7f7f7;
+}
+
+/* Dil değiştirme kısmı*/
+.dil {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 5px;
+}
+
+.bayraklar {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.bayrak {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.bayrak:hover {
+  transform: scale(1.1);
+  transition: 0.5s all ease;
+}
+.bayrak2 {
+  width: 37px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.bayrak2:hover {
+  transform: scale(1.1);
+  transition: 0.5s all ease;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  margin-top: 90px;
+  margin-left: -180px;
+  font-family:"Nunito Sans", sans-serif;
+}
+
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+#aramaButonu {
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: none;
+  background-image: linear-gradient(rgb(167, 6, 6),#272727);
+  color: #eee;
+  cursor: pointer;
+  transition: 0.3s ease 0s;
+  box-shadow: 0px 8px 15px rgba(119, 8, 8, 0.1);
+  outline: none;
+  font-family: "Nunito Sans", sans-serif;
+}
+#aramaButonu:hover{
+    background: linear-gradient(#272727,gray);
+    box-shadow: 0px 15px 20px rgba(157, 160, 159, 0.4);
+}
+
+
+
+/* Menü başlangıc*/
+.menu {
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Menü Logosu*/
+.menuLogo img {
+  width: 170px;
+  height: 170px;
+  margin-left: 20px;
+  margin-right: -100px;
+  margin-bottom: 50px;
+}
+
+.menu1 {
+  margin-top: 80px;
+  padding: 10px;
+  margin-right: 80px;
+}
+  
+.menu1 ul {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+.menu1 ul  li {
+    margin: 0 20px;
+  }
+
+.menu1 ul  li  a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items:center;
+    font-size: 20px;
+    margin-right: 5px;
+    padding-right: 5px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+.menu1 ul  li  a img 
+{
+    margin-right: 10px;
+    max-width: 30px;
+}
+
+  .menu1 ul li:hover
+  {
+      padding-bottom: 2px;
+      padding-top: 10px;
+      background-color: #f7f7f7;
+      transform: scale(1.3);
+  }
+
+ .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f7f7f7;
+    z-index: 1;
+    width: 100%
+}
+
+.dropdown-content a {
+    color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: white;
+    margin-top: 5px;
+    width: 78%;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*Menu bitis*/
+
+/* Ekleme yapman gereken kısım/*/
+
+
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
+
+.container-card {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-gap: 50px;
+  justify-content: center;
+  align-items: center;
+  height: 100rem;
+  font-family: "Nunito Sans", sans-serif;
+  background: linear-gradient(rgb(20, 20, 20), gray, lightgray, #f7f7f7);
+  margin-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.card {
+  background-color: #222831;
+  height: 27rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.card__name {
+  margin-top: 15px;
+  font-size: 1.5em;
+  font-family: "Nunito Sans", sans-serif;;
+}
+
+.card__image {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  border: 5px solid #272133;
+  margin-top: 20px;
+  box-shadow: 0 10px 50px rgba(235, 25, 110, 1);
+}
+
+.draw-border {
+  box-shadow: inset 0 0 0 4px #58cdd1;
+  color: #58afd1;
+  -webkit-transition: color 0.25s 0.0833333333s;
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
+}
+
+.draw-border::before,
+.draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 0rem;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.draw-border::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+
+.draw-border::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+
+.draw-border:hover {
+  color: #ffe593;
+}
+
+.draw-border:hover::before,
+.draw-border:hover::after {
+  border-color: #eb196e;
+  -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+
+.draw-border:hover::before {
+  -webkit-transition-delay: 0s, 0s, 0.25s;
+  transition-delay: 0s, 0s, 0.25s;
+}
+
+.draw-border:hover::after {
+  -webkit-transition-delay: 0s, 0.25s, 0s;
+  transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem "Nunito Sans", sans-serif;
+  padding: 0.75em 2em;
+  letter-spacing: 0.05rem;
+  margin: 1em;
+  width: 13rem;
+}
+
+.btn:focus {
+  outline: 2px dotted #55d7dc;
+}
+
+.social-icons
+ {
+  padding: 0;
+  list-style: none;
+  margin: 1em;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 0.15em;
+  position: relative;
+  font-size: 1em;
+}
+
+
+
+.social-icons a {
+  display: inline-block;
+}
+
+
+
+.foto{
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+  margin: 0.5em;
+}
+
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  font-size: 1.2em;
+}
+
+
+
+/* Ekleme yapman gereken kısım/*/
+
+
+/* footer*/
+
+.container-footer{
+  max-width: 1170px;
+  margin:auto;
+  
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #24262b;
+    padding: 70px 0px;
+    height: 350px;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: rgb(150, 26, 26);
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links i{
+   margin-top: 10px;
+}
+
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+/*Footer bitis*/
+
+
+/*Takvim*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+#copy-right
+{
+   padding-top: 20px;
+
+}
+.copy-right-sec{
+    padding: 0.5rem;
+      background: #666666;
+      color: #fff;
+      text-align: center;
+      height: 35px;
+  }
+  .copy-right-sec a{
+    color: #fcd462;
+      font-weight: 500;
+  }
+  a{
+    text-decoration:none;
+  }
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    transition: all 0.34s ease;
+    font-family: "Nunito Sans", sans-serif;
+  }
+
+  .bilgi h3 {
+
+    font-family: "Nunito Sans", sans-serif;
+    color: whitesmoke;
+  }
